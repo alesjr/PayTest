@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Main.KeyPadFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewMoney"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/labelCipherMoney"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/condensed_bold"
+            android:text="@string/labelCypherMoney"
+            android:textColor="@color/colorWhite"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toTopOf="@+id/labelTextPay"
+            app:layout_constraintEnd_toStartOf="@+id/labelMoneyValue"/>
+
+        <TextView
+            android:id="@+id/labelMoneyValue"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/condensed_bold"
+            android:text="@string/labelValueInit"
+            android:textColor="@color/colorWhite"
+            android:textSize="70sp"
+            app:layout_constraintBottom_toTopOf="@+id/labelTextPay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelTextPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/condensed_bold"
+            android:text="@string/labelTextPay"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/viewKeypad"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewMoney">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/buttonOne"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonOne"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonTwo"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonTwo"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"/>
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonThree"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonThree"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/buttonFour"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonFour"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonFive"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonFive"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonSix"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonSix"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/buttonSeven"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonSeven"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonEight"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonEight"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonNine"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonNine"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/buttonZero"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonZero"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonBackspace"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="@drawable/circle_button"
+                android:text="@string/buttonNine"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"  />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewKeypad"
+        tools:layout_editor_absoluteX="9dp">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

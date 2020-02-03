@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PayTestApplication</string>
+    <string name="labelTextPay">TOTAL A PAGAR</string>
+    <string name="labelCypherMoney">R$</string>
+    <string name="labelValueInit">0,00</string>
+    <string name="buttonOne">1</string>
+    <string name="buttonTwo">2</string>
+    <string name="buttonThree">3</string>
+    <string name="buttonFour">4</string>
+    <string name="buttonFive">5</string>
+    <string name="buttonSix">6</string>
+    <string name="buttonSeven">7</string>
+    <string name="buttonEight">8</string>
+    <string name="buttonNine">9</string>
+    <string name="buttonZero">0</string>
+</resources>
