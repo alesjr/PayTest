@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    tools:context=".Main.KeyPadFragment">
+    tools:context=".PaymentType.Controller.KeyPadFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/viewMoney"
@@ -29,7 +29,6 @@
             android:id="@+id/labelMoneyValue"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/condensed_bold"
             android:text="@string/labelValueInit"
             android:textColor="@color/colorWhite"
             android:textSize="70sp"
@@ -75,6 +74,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonOne"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
@@ -88,6 +88,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonTwo"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp"/>
@@ -101,6 +102,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonThree"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
@@ -118,6 +120,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonFour"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
@@ -131,6 +134,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonFive"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
@@ -144,6 +148,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonSix"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
@@ -161,6 +166,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonSeven"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
@@ -174,6 +180,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonEight"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
@@ -187,6 +194,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonNine"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
@@ -205,6 +213,7 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
                 android:text="@string/buttonZero"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp" />
@@ -218,20 +227,11 @@
                 android:layout_width="65dp"
                 android:layout_height="65dp"
                 android:background="@drawable/circle_button"
-                android:text="@string/buttonNine"
+                android:fontFamily="@font/condensed_bold"
                 android:textColor="@color/colorWhite"
                 android:textSize="30sp"  />
 
         </LinearLayout>
     </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="195dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/viewKeypad"
-        tools:layout_editor_absoluteX="9dp">
-
-    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
