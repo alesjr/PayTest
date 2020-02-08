@@ -1,6 +1,6 @@
-package com.example.paytestapplication.PaymentType.Controller;
+package com.example.paytestapplication.Payment.Controller;
 
-import androidx.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
 
@@ -15,18 +15,18 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.paytestapplication.PaymentType.ViewModel.keyPadViewModel;
+import com.example.paytestapplication.Payment.ViewModel.PaymentViewModel;
 import com.example.paytestapplication.R;
 
 public class KeyPadFragment extends Fragment implements View.OnClickListener {
 
-    private com.example.paytestapplication.PaymentType.ViewModel.keyPadViewModel keyPadViewModel;
     private TextView labelMoneyValue;
+    private PaymentViewModel paymentViewModel;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        ViewGroup fragmentView = (ViewGroup) inflater.inflate(R.layout.keypad_fragment, container, false);
+        ViewGroup fragmentView = (ViewGroup) inflater.inflate(R.layout.payment_keypad_fragment, container, false);
 
         this.setClickEvent(fragmentView);
         labelMoneyValue = fragmentView.findViewById(R.id.labelMoneyValue);
@@ -37,22 +37,21 @@ public class KeyPadFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        this.keyPadViewModel = ViewModelProviders.of(this).get(keyPadViewModel.class);
+        this.paymentViewModel = new ViewModelProvider(requireActivity()).get(PaymentViewModel.class);
     }
 
     @Override
     public void onClick(View v) {
-        String value = keyPadViewModel.getValue().replace(",", "");
+        String value = String.valueOf(labelMoneyValue.getText());
         if(v.getId() == R.id.buttonBackspace){
-            value = keyPadViewModel.removeLastValue(value);
+            value = paymentViewModel.removeLastValue();
         } else{
             Button button = (Button) v;
-            value += button.getText();
+            value+=button.getText();
+            value = paymentViewModel.formatValueToDecimalString(value);
         }
 
-        keyPadViewModel.setValue(value);
-        labelMoneyValue.setText(keyPadViewModel.getValue());
+        labelMoneyValue.setText(value);
     }
 
     private void setClickEvent(ViewGroup view){

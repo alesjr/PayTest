@@ -1,16 +1,20 @@
 <resources>
     <string name="app_name">PayTestApplication</string>
-    <string name="labelTextPay">TOTAL A PAGAR</string>
-    <string name="labelCypherMoney">R$</string>
-    <string name="labelValueInit">0,00</string>
-    <string name="buttonOne">1</string>
-    <string name="buttonTwo">2</string>
-    <string name="buttonThree">3</string>
-    <string name="buttonFour">4</string>
-    <string name="buttonFive">5</string>
-    <string name="buttonSix">6</string>
-    <string name="buttonSeven">7</string>
-    <string name="buttonEight">8</string>
-    <string name="buttonNine">9</string>
-    <string name="buttonZero">0</string>
+    <string name="nav_header_receipt_title">PAGAMENTO REALIZADO COM SUCESSO</string>
+    <string name="label_text_pay">TOTAL A PAGAR</string>
+    <string name="label_cypher_money">R$</string>
+    <string name="label_value_init">0,00</string>
+    <string name="label_debit">DÉBITO</string>
+    <string name="label_credit">CRÉDITO</string>
+    <string name="label_money">DINHEIRO</string>
+    <string name="button_one">1</string>
+    <string name="button_two">2</string>
+    <string name="button_three">3</string>
+    <string name="button_four">4</string>
+    <string name="button_five">5</string>
+    <string name="button_six">6</string>
+    <string name="button_seven">7</string>
+    <string name="button_eight">8</string>
+    <string name="button_nine">9</string>
+    <string name="button_zero">0</string>
 </resources>

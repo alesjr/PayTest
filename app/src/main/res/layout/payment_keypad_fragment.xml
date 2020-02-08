@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment.Controller.KeyPadFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewMoney"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/labelCipherMoney"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/condensed_bold"
+            android:text="@string/label_cypher_money"
+            android:textColor="@color/colorWhite"
+            android:textSize="40sp"
+            android:paddingRight="10dp"
+            android:gravity="bottom|end"
+            app:layout_constraintBottom_toTopOf="@+id/labelTextPay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/labelMoneyValue" />
+
+        <TextView
+            android:id="@+id/labelMoneyValue"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:fontFamily="@font/condensed_bold"
+            android:text="@string/label_value_init"
+            android:textColor="@color/colorWhite"
+            android:textSize="55sp"
+            android:gravity="bottom|left"
+            app:layout_constraintBottom_toTopOf="@+id/labelTextPay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/labelTextPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/condensed_bold"
+            android:text="@string/label_text_pay"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/viewKeypad"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewMoney">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/button_one"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_one"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <Button
+                android:id="@+id/button_two"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_two"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button
+                android:id="@+id/button_three"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_three"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/button_four"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_four"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <Button
+                android:id="@+id/button_five"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_five"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button
+                android:id="@+id/button_six"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_six"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/button_seven"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_seven"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <Button
+                android:id="@+id/button_eight"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_eight"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button
+                android:id="@+id/button_nine"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_nine"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/button_zero"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:text="@string/button_zero"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button
+                android:id="@+id/buttonBackspace"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_button"
+                android:fontFamily="@font/condensed_bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
