@@ -3,15 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:background="@color/colorBlack"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:layout_height="40dp"
+    android:navigationIcon="@android:drawable/menuitem_background"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/condensed_bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:gravity="center_horizontal|bottom"
         android:text="@string/nav_header_receipt_title" />
 
 </Toolbar>

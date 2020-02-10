@@ -1,12 +1,17 @@
 <resources>
     <string name="app_name">PayTestApplication</string>
     <string name="nav_header_receipt_title">PAGAMENTO REALIZADO COM SUCESSO</string>
+    <string name="label_company_name">Eyemobile Tecnologia LTDA. </string>
+    <string name="label_company_address">Rua Airton Roberto de Oliveira</string>
+    <string name="label_company_address_number">Número 64</string>
     <string name="label_text_pay">TOTAL A PAGAR</string>
     <string name="label_cypher_money">R$</string>
     <string name="label_value_init">0,00</string>
     <string name="label_debit">DÉBITO</string>
     <string name="label_credit">CRÉDITO</string>
     <string name="label_money">DINHEIRO</string>
+    <string name="label_vr">V.R.</string>
+    <string name="label_cupom">CUPOM</string>
     <string name="button_one">1</string>
     <string name="button_two">2</string>
     <string name="button_three">3</string>

@@ -6,4 +6,6 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#000000</color>
     <color name="colorGrey">#858585</color>
+    <color name="colorPurple">#4E0B86</color>
+    <color name="colorTurquoise">#089D7E</color>
 </resources>

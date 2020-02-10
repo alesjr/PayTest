@@ -1,45 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp">
+    <ImageButton
+        android:id="@+id/buttonMoney"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_money"
+        android:background="@drawable/circle_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/buttonDebit"/>
 
-        <ImageButton
-            android:id="@+id/buttonMoney"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:background="@drawable/circle_button"
-            android:src="@drawable/ic_money"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/buttonDebit"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonMoney"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/buttonDebit"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/condensed_bold"
+        android:text="@string/label_money"/>
 
-        <ImageButton
-            android:id="@+id/buttonDebit"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:background="@drawable/circle_button"
-            android:src="@drawable/ic_debit"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageButton
+        android:id="@+id/buttonDebit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_debit"
+        android:background="@drawable/circle_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/buttonCredit"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:background="@drawable/circle_button"
-            android:src="@drawable/ic_credit"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/buttonDebit"/>
+    <TextView
+        android:id="@+id/textDebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonDebit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/condensed_bold"
+        android:text="@string/label_debit"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+    <ImageButton
+        android:id="@+id/buttonCredit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_credit"
+        android:background="@drawable/circle_button"
+        app:layout_constraintStart_toStartOf="@id/buttonDebit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/buttonDebit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonCredit"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/condensed_bold"
+        android:text="@string/label_credit"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

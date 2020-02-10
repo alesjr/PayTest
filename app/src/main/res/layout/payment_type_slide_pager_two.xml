@@ -3,30 +3,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp">
 
-    <LinearLayout
-        android:layout_width="395dp"
-        android:layout_height="715dp"
-        android:orientation="horizontal"
+    <ImageButton
+        android:id="@+id/buttonVR"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_vr"
+        android:background="@drawable/circle_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintEnd_toEndOf="@id/buttonCupom"/>
 
-        <ImageButton
-            android:id="@+id/buttonVr"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:background="@drawable/circle_button"
-            android:src="@drawable/ic_vr"
-            android:onClick="onClickButton"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonVR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/buttonCupom"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/condensed_bold"
+        android:text="@string/label_vr"/>
 
-        <ImageButton
-            android:id="@+id/buttonCupom"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:background="@drawable/circle_button"
-            android:src="@drawable/ic_cupom"
-            android:onClick="onClickButton"/>
+    <ImageButton
+        android:id="@+id/buttonCupom"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:src="@drawable/ic_cupom"
+        android:background="@drawable/circle_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonCupom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/condensed_bold"
+        android:text="@string/label_cupom"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

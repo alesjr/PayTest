@@ -1,17 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/receiptInformation"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/recibo_background"
+    tools:context=".PaymentReceipt.Controller.PaymentReceiptActivity">
 
     <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelCompanyName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/tahoma_bold"
+        android:text="@string/label_company_name"
+        android:textSize="10sp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_logo"/>
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/labelCompanyAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:fontFamily="@font/tahoma"
+        android:text="@string/label_company_address"
+        android:textSize="10sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/labelCompanyName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelCompanyAddressNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:fontFamily="@font/tahoma"
+        android:text="@string/label_company_address_number"
+        android:textSize="10sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/labelCompanyAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelPaymentValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tahoma_bold"
+        android:text="@string/label_cypher_money"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/labelCompanyAddressNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/labelPaymentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tahoma"
+        android:text="Dinheiro"
+        android:paddingTop="4dp"
+        android:textSize="10sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/labelPaymentValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelPaymentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tahoma"
+        android:text="01/01/2020 18:00:00"
+        android:layout_marginTop="20dp"
+        android:textSize="8sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/labelPaymentType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"  />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
